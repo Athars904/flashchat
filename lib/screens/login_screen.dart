@@ -38,18 +38,21 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 48.0,
               ),
               TextField(
+                style: TextStyle(color: Colors.black),
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
                 onChanged: (value) {
                   email=value;
                   //Do something with the user input.
                 },
-                decoration: kInputDecorationStyle.copyWith(hintText: 'Enter Email address'),
+                decoration: kInputDecorationStyle.copyWith(hintText: 'Enter Email address',),
               ),
               SizedBox(
                 height: 8.0,
               ),
               TextField(
+
+                style: TextStyle(color: Colors.black),
                 textAlign: TextAlign.center,
                 obscureText: true,
                 onChanged: (value) {
@@ -57,6 +60,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 },
                 decoration: kInputDecorationStyle.copyWith(
                   hintText: 'Enter your password',
+                  hintStyle: const TextStyle(
+                    color: Colors.black
+                  ),
                 ),
               ),
               SizedBox(
